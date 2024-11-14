@@ -3,51 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" type="text/css" />
     <title>ChatScript</title>
   </head>
-  <body>
+  <body class="bg-zinc-300">
     <!--div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"-->
+    <header
+      class="flex justify-between items-center border-b border-gray-200 sticky top-0 bg-white py-2 px-4 z-10"
+    >
+      <div class="flex items-center gap-2">
+        <img src="/logo.png" alt="ChatScript" class="w-8" />
+        <h1 class="text-xl font-bold text-gray-800">ChatScript</h1>
+      </div>
+      <a
+        href="https://web.chatscript.lat"
+        class="bg-blue-300 text-blue-900 px-4 py-2 rounded-full hover:bg-blue-400 transition-colors"
+      >
+        Get started free
+      </a>
+    </header>
+
     <!-- Hero Section -->
     <div
-      class="py-20 text-center h-screen w-full bg-gradient-to-br from-lime-50 via-purple-50 to-blue-50"
+      class="py-20 text-center h-screen w-full flex flex-col items-center bg-gradient-to-b from-white to-sky-500"
     >
       <h1 class="text-5xl font-bold text-gray-900 mb-4">
-        Your AI Agent for WhatsApp Business
+        Your AI Agent for <span class="text-green-600">WhatsApp Business</span>
       </h1>
       <p class="text-xl text-gray-600 mb-8">
-        Elevate customer service with accessible pricing.
+        Elevate customer service with accessible pricing. <br />
+        Get 50 free AI conversations per month, then pay as-you-go.
       </p>
       <a
-        href="#"
-        class="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors"
+        href="https://web.chatscript.lat"
+        class="bg-blue-300 text-blue-900 text-xl px-7 py-3 shadow-sm rounded-full hover:bg-blue-400 transition-colors"
       >
-        Get Started Free
+        Get started free
       </a>
+
+      <iframe
+        src="https://www.loom.com/embed/709d5d3712054a69bd1f81fd07dca4c8?sid=dcc1411b-6b47-4ec3-bf87-72ff7cc42c76&hideEmbedTopBar=true&hide_speed=true"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        class="border-8 border-black rounded-xl w-[800px] h-[450px] absolute top-[calc(100%-225px)] bg-gray-300"
+      ></iframe>
     </div>
 
     <!-- Benefits Section -->
-    <div class="py-16 bg-white rounded-xl shadow-sm mb-16">
+    <div class="pt-[225px] pb-8 bg-white">
       <div class="grid md:grid-cols-3 gap-8 px-8">
         <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-            Automate 70% of Replies
+          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+            Automate 70% of replies
           </h3>
           <p class="text-gray-600">
             Offload repetitive questions to your AI agent.
           </p>
         </div>
         <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-            24/7 Responses
+          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+            Collect data effortlessly
           </h3>
           <p class="text-gray-600">
-            Never miss a message—your AI is always on.
+            Instruct the AI agent to gather the answers you need.
           </p>
         </div>
         <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-            Focus on What Matters
+          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+            Focus on what matters
           </h3>
           <p class="text-gray-600">
             Handle only the messages that need a personal touch.
@@ -57,36 +88,74 @@
     </div>
 
     <!-- Features Section -->
-    <div class="py-16">
-      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
-        Key Features
-      </h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">
-            WhatsApp Web Interface
-          </h3>
-          <p class="text-gray-600">
-            Same familiar layout, fewer messages to handle.
-          </p>
+    <div class="py-16 bg-gradient-to-b from-white to-sky-200">
+      <div class="flex flex-col items-center gap-32">
+        <!-- One -->
+        <div class="flex items-center justify-center gap-4 w-[80%]">
+          <div class="bg-gradient-to-tl from-purple-300 to-green-300 p-[1px]">
+            <img
+              src="/wp-web-ui.png"
+              alt="WhatsApp Web Interface"
+              class="w-[600px]"
+            />
+          </div>
+          <div class="w-1/4">
+            <h3
+              class="text-2xl font-semibold text-gray-900 mb-1 text-purple-900"
+            >
+              WhatsApp interface
+            </h3>
+            <p class="text-xl text-gray-600 font-light">
+              Same familiar layout, fewer messages to handle.
+            </p>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Easy Setup</h3>
-          <p class="text-gray-600">
-            Just instruct your AI agent as you would any assistant.
-          </p>
+
+        <!-- Two -->
+        <div class="flex items-center justify-center gap-4 w-[80%]">
+          <div class="w-1/4">
+            <h3 class="text-2xl font-semibold text-green-900 mb-1">
+              Easy setup
+            </h3>
+            <p class="text-xl text-gray-600">
+              Just instruct your AI agent as you would any assistant.
+            </p>
+          </div>
+          <div class="bg-gradient-to-bl from-purple-300 to-green-300 p-[1px]">
+            <img src="/easy-setup.png" alt="Easy Setup" class="w-[600px]" />
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">
-            Shared Team Inbox
-          </h3>
-          <p class="text-gray-600">
-            Collaborate seamlessly with human teammates.
-          </p>
+
+        <!-- Three -->
+        <div class="flex items-center justify-center gap-4 w-[80%]">
+          <div class="bg-gradient-to-tl from-purple-300 to-green-300 p-[1px]">
+            <img
+              src="/easy-setup.png"
+              alt="Shared Team Inbox"
+              class="w-[600px]"
+            />
+          </div>
+
+          <div class="w-1/4">
+            <h3 class="text-2xl font-semibold mb-1 text-purple-900">
+              Shared team inbox
+            </h3>
+            <p class="text-xl text-gray-600">
+              Collaborate seamlessly with human teammates.
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!--/div-->
-    <a href="/privacy-policy.html">Privacy Policy</a>
+
+    <footer class="bg-white text-gray-600 py-4">
+      <div class="container mx-auto text-center">
+        ChatScript |
+        <a href="/privacy-policy.html" class="hover:underline"
+          >Privacy policy</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
