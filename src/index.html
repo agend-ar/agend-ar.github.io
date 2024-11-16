@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="/style.css" type="text/css" />
     <title>ChatScript</title>
   </head>
-  <body class="bg-zinc-300">
-    <!--div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"-->
+  <body class="bg-white">
     <header
       class="flex justify-between items-center border-b border-gray-200 sticky top-0 bg-white py-2 px-4 z-10"
     >
@@ -32,72 +31,80 @@
 
     <!-- Hero Section -->
     <div
-      class="py-20 text-center h-screen w-full flex flex-col items-center bg-gradient-to-b from-white to-sky-500"
+      class="pt-20 lg:pb-20 text-center w-full flex flex-col items-center bg-gradient-to-b from-white to-sky-500"
     >
-      <h1 class="text-5xl font-bold text-gray-900 mb-4">
-        Your AI Agent for <span class="text-green-600">WhatsApp Business</span>
-      </h1>
-      <p class="text-xl text-gray-600 mb-12">
-        Elevate customer service with accessible pricing. <br />
-        Get 50 free AI conversations per month, then pay as-you-go.
-      </p>
+      <div class="px-8 mb-24">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">
+          Your AI Agent for
+          <span class="text-green-600">WhatsApp Business</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-12">
+          Elevate customer service with accessible pricing. <br />
+          Get 50 free AI conversations per month, then pay as-you-go.
+        </p>
 
-      <a
-        href="https://web.whatsapp.com/send/?phone=5491133585694&text&type=phone_number&app_absent=0"
-        target="blank"
-        class="text-gray-700 text-2xl font-bold bg-white hover:bg-sky-100 transition-colors px-8 py-3 shadow-sm rounded-full"
+        <a
+          href="https://web.whatsapp.com/send/?phone=5491133585694&text&type=phone_number&app_absent=0"
+          target="blank"
+          class="text-gray-700 text-2xl font-bold bg-white hover:bg-sky-100 transition-colors px-8 py-3 shadow-sm rounded-full"
+        >
+          Book a demo
+        </a>
+      </div>
+
+      <div
+        class="w-full lg:w-[65vw] bg-black lg:border-y-8 lg:border-x-[16px] border-black lg:rounded-xl"
       >
-        Book a demo
-      </a>
-
-      <iframe
-        src="https://www.loom.com/embed/709d5d3712054a69bd1f81fd07dca4c8?sid=dcc1411b-6b47-4ec3-bf87-72ff7cc42c76&hideEmbedTopBar=true&hide_speed=true"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        class="border-8 border-black rounded-xl w-[800px] h-[450px] absolute top-[calc(100%-225px)] bg-gray-300"
-      ></iframe>
-    </div>
-
-    <!-- Benefits Section -->
-    <div class="pt-[225px] pb-8 bg-white">
-      <div class="grid md:grid-cols-3 gap-8 px-8">
-        <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
-            Automate 70% of replies
-          </h3>
-          <p class="text-gray-600">
-            Offload repetitive questions to your AI agent.
-          </p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
-            Collect data effortlessly
-          </h3>
-          <p class="text-gray-600">
-            Instruct the AI agent to gather the answers you need.
-          </p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-1">
-            Focus on what matters
-          </h3>
-          <p class="text-gray-600">
-            Handle only the messages that need a personal touch.
-          </p>
+        <div class="relative pb-[56.25%] h-0">
+          <iframe
+            src="https://www.loom.com/embed/709d5d3712054a69bd1f81fd07dca4c8?sid=ec6cba65-8394-4c29-9a54-30ec1e8eb720&hideEmbedTopBar=true&hide_speed=true"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            class="absolute top-0 left-0 w-full h-full"
+          ></iframe>
         </div>
       </div>
     </div>
 
+    <!-- Benefits Section -->
+
+    <div class="p-8 flex gap-8 max-w-[1200px] mx-auto flex-col md:flex-row">
+      <div class="text-center">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+          Automate 70% of replies
+        </h3>
+        <p class="text-gray-600">
+          Offload repetitive questions to your AI agent.
+        </p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+          Collect data effortlessly
+        </h3>
+        <p class="text-gray-600">
+          Instruct the AI agent to gather the answers you need.
+        </p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-1">
+          Focus on what matters
+        </h3>
+        <p class="text-gray-600">
+          Handle only the messages that need a personal touch.
+        </p>
+      </div>
+    </div>
+
     <!-- Social proof Section -->
-    <div class="py-16 bg-white flex justify-center px-8">
+    <div class="py-16 flex justify-center px-8">
       <a href="https://emprelatam.com" target="blank">
         <div class="flex items-center gap-8">
           <img
             src="/emprelatam.png"
             alt="Emprelatam"
-            class="w-[200px] contrast-0"
+            class="w-[150px] sm:w-[200px] contrast-0"
           />
           <p class="text-gray-600 contrast-0">
             ChatScript has joined Emprelatam ECL exploration program!
@@ -110,7 +117,9 @@
     <div class="py-16 bg-gradient-to-b from-white to-sky-200">
       <div class="flex flex-col items-center gap-32">
         <!-- One -->
-        <div class="flex items-center justify-center gap-4 w-[80%]">
+        <div
+          class="flex items-center justify-center gap-4 w-[80%] flex-col md:flex-row"
+        >
           <div
             class="bg-gradient-to-tl from-purple-300 to-green-300 p-[1px] shadow-md"
           >
@@ -120,7 +129,7 @@
               class="w-[600px]"
             />
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4">
             <h3
               class="text-2xl font-semibold text-gray-900 mb-1 text-purple-900"
             >
@@ -133,8 +142,10 @@
         </div>
 
         <!-- Two -->
-        <div class="flex items-center justify-center gap-4 w-[80%]">
-          <div class="w-1/4">
+        <div
+          class="flex items-center justify-center gap-4 w-[80%] flex-col md:flex-row"
+        >
+          <div class="md:w-1/4">
             <h3 class="text-2xl font-semibold text-green-900 mb-1">
               Easy setup
             </h3>
@@ -150,7 +161,9 @@
         </div>
 
         <!-- Three -->
-        <div class="flex items-center justify-center gap-4 w-[80%]">
+        <div
+          class="flex items-center justify-center gap-4 w-[80%] flex-col md:flex-row"
+        >
           <div
             class="bg-gradient-to-tl from-purple-300 to-green-300 p-[1px] shadow-md"
           >
@@ -161,7 +174,7 @@
             />
           </div>
 
-          <div class="w-1/4">
+          <div class="md:w-1/4">
             <h3 class="text-2xl font-semibold mb-1 text-purple-900">
               Shared team inbox
             </h3>
@@ -172,7 +185,6 @@
         </div>
       </div>
     </div>
-    <!--/div-->
 
     <div
       class="flex flex-col items-center justify-center pt-8 pb-16 bg-sky-200 gap-8 px-8"
@@ -198,7 +210,7 @@
         <a href="/privacy-policy.html" class="hover:underline"
           >Privacy policy</a
         >
-        | +54 9 11 3358-5694
+        | <span class="text-nowrap">+54 9 11 3358-5694</span>
       </div>
     </footer>
   </body>
